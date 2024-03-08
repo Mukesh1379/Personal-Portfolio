@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<title>Portfolio Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="hello.css">
+<link rel="stylesheet" href="Montserrat.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.hello-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.hello-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
+<body class="hello-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="hello-sidebar hello-bar-block hello-small hello-hide-small hello-center">
+  <!-- Avatar image in top left corner -->
+  <img src="images/avatar_smoke.jpg" style="width:100%">
+  <a href="#" class="hello-bar-item hello-button hello-padding-large hello-black">
+    <i class="fa fa-home hello-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="hello-bar-item hello-button hello-padding-large hello-hover-black">
+    <i class="fa fa-user hello-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="hello-bar-item hello-button hello-padding-large hello-hover-black">
+    <i class="fa fa-eye hello-xxlarge"></i>
+    <p>PHOTOS</p>
+  </a>
+  <a href="#contact" class="hello-bar-item hello-button hello-padding-large hello-hover-black">
+    <i class="fa fa-envelope hello-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="hello-top hello-hide-large hello-hide-medium" id="myNavbar">
+  <div class="hello-bar hello-black hello-opacity hello-hover-opacity-off hello-center hello-small">
+    <a href="#" class="hello-bar-item hello-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="hello-bar-item hello-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="hello-bar-item hello-button" style="width:25% !important">PHOTOS</a>
+    <a href="#contact" class="hello-bar-item hello-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="hello-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="hello-container hello-padding-32 hello-center hello-black" id="home">
+    <h1 class="hello-jumbo"><span class="hello-hide-small">I'm</span> John Doe.</h1>
+    <p>Photographer and Web Designer.</p>
+    <img src="images/man_smoke.jpg" alt="boy" class="hello-image" width="992" height="1108">
+  </header>
+
+  <!-- About Section -->
+  <div class="hello-content hello-justify hello-text-grey hello-padding-64" id="about">
+    <h2 class="hello-text-light-grey">My Name</h2>
+    <hr style="width:200px" class="hello-opacity">
+    <p>Hello there! I'm John Due, a passionate creative soul thriving in the realms of photography and web design. 
+      With an insatiable curiosity and a keen eye for detail, I immerse myself in the art of capturing moments and crafting digital experiences.
+      Photography isn't just a profession for me; it's a way of life. From the bustling streets of urban landscapes to the serene beauty of nature's untouched wonders, I find inspiration in every corner of the world. 
+      Through my lens, I seek to freeze moments in time, allowing them to tell stories that resonate with emotion and authenticity.Beyond the technical aspects, I believe in the power of storytelling. 
+      Each photograph I capture and every website I design is infused with a narrative, inviting viewers to embark on a journey of discovery and connection.
+    </p>
+    <h3 class="hello-padding-16 hello-text-light-grey">My Skills</h3>
+    <p class="hello-wide">Photography</p>
+    <div class="hello-white">
+      <div class="hello-dark-grey" style="height:28px;width:95%"></div>
+    </div>
+    <p class="hello-wide">Web Design</p>
+    <div class="hello-white">
+      <div class="hello-dark-grey" style="height:28px;width:85%"></div>
+    </div>
+    <p class="hello-wide">Photoshop</p>
+    <div class="hello-white">
+      <div class="hello-dark-grey" style="height:28px;width:80%"></div>
+    </div><br>
+    
+    <div class="hello-row hello-center hello-padding-16 hello-section hello-light-grey">
+      <div class="hello-quarter hello-section">
+        <span class="hello-xlarge">11+</span><br>
+        Partners
+      </div>
+      <div class="hello-quarter hello-section">
+        <span class="hello-xlarge">55+</span><br>
+        Projects Done
+      </div>
+      <div class="hello-quarter hello-section">
+        <span class="hello-xlarge">89+</span><br>
+        Happy Clients
+      </div>
+      <div class="hello-quarter hello-section">
+        <span class="hello-xlarge">150+</span><br>
+        Meetings
+      </div>
+    </div>
+
+    <button class="hello-button hello-light-grey hello-padding-large hello-section">
+      <i class="fa fa-download"></i> Download Resume
+    </button>
+    
+    <!-- Grid for pricing tables -->
+    <h3 class="hello-padding-16 hello-text-light-grey">My Price</h3>
+    <div class="hello-row-padding" style="margin:0 -16px">
+      <div class="hello-half hello-margin-bottom">
+        <ul class="hello-ul hello-white hello-center hello-opacity hello-hover-opacity-off">
+          <li class="hello-dark-grey hello-xlarge hello-padding-32">Basic</li>
+          <li class="hello-padding-16">Web Design</li>
+          <li class="hello-padding-16">Photography</li>
+          <li class="hello-padding-16">5GB Storage</li>
+          <li class="hello-padding-16">Mail Support</li>
+          <li class="hello-padding-16">
+            <h2>$ 10</h2>
+            <span class="hello-opacity">per month</span>
+          </li>
+          <li class="hello-light-grey hello-padding-24">
+            <button class="hello-button hello-white hello-padding-large hello-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hello-half">
+        <ul class="hello-ul hello-white hello-center hello-opacity hello-hover-opacity-off">
+          <li class="hello-dark-grey hello-xlarge hello-padding-32">Pro</li>
+          <li class="hello-padding-16">Web Design</li>
+          <li class="hello-padding-16">Photography</li>
+          <li class="hello-padding-16">50GB Storage</li>
+          <li class="hello-padding-16">Endless Support</li>
+          <li class="hello-padding-16">
+            <h2>$ 25</h2>
+            <span class="hello-opacity">per month</span>
+          </li>
+          <li class="hello-light-grey hello-padding-24">
+            <button class="hello-button hello-white hello-padding-large hello-hover-black">Sign Up</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+    </div>
+    
+    <!-- Testimonials -->
+    <h3 class="hello-padding-24 hello-text-light-grey">My Reputation</h3>  
+    <img src="images/bandmember.jpg" alt="Avatar" class="hello-left hello-circle hello-margin-right" style="width:80px">
+    <p><span class="hello-large hello-margin-right">Chris Fox.</span> CEO at Mighty Schools.</p>
+    <p>John Doe saved us from a web disaster.</p><br>
+    
+    <img src="images/avatar_g2.jpg" alt="Avatar" class="hello-left hello-circle hello-margin-right" style="width:80px">
+    <p><span class="hello-large hello-margin-right">Rebecca Flex.</span> CEO at Company.</p>
+    <p>No one is better than John Doe.</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="hello-padding-64 hello-content" id="photos">
+    <h2 class="hello-text-light-grey">My Photos</h2>
+    <hr style="width:200px" class="hello-opacity">
+
+    <!-- Grid for photos -->
+    <div class="hello-row-padding" style="margin:0 -16px">
+      <div class="hello-half">
+        <img src="images/wedding.jpg" style="width:100%">
+        <img src="images/rocks.jpg" style="width:100%">
+        <img src="images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="hello-half">
+        <img src="images/underwater.jpg" style="width:100%">
+        <img src="images/chef.jpg" style="width:100%">
+        <img src="images/wedding.jpg" style="width:100%">
+        <img src="images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="hello-padding-64 hello-content hello-text-grey" id="contact">
+    <h2 class="hello-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="hello-opacity">
+
+    <div class="hello-section">
+      <p><i class="fa fa-map-marker fa-fw hello-text-white hello-xxlarge hello-margin-right"></i> Chicago, US</p>
+      <p><i class="fa fa-phone fa-fw hello-text-white hello-xxlarge hello-margin-right"></i> Phone: +1-202-688-5500</p>
+      <p><i class="fa fa-envelope fa-fw hello-text-white hello-xxlarge hello-margin-right"> </i> Email: JohnDue@mail.com</p>
+    </div><br>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="hello-content hello-padding-64 hello-text-grey hello-xlarge">
+    <i class="fa fa-facebook-official hello-hover-opacity"></i>
+    <i class="fa fa-instagram hello-hover-opacity"></i>
+    <i class="fa fa-snapchat hello-hover-opacity"></i>
+    <i class="fa fa-pinterest-p hello-hover-opacity"></i>
+    <i class="fa fa-twitter hello-hover-opacity"></i>
+    <i class="fa fa-linkedin hello-hover-opacity"></i>
+    <p class="hello-medium">Powered by JoJo</p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
